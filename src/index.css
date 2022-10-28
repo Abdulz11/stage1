@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* profile section */
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-container a{
+    font-size: 1.3rem;
+    color: black;
+}
+
+/* link section */
+.link-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    border-top:2px solid black;
+}
+
+.btn{
+    width: 50%;
+    margin: 1rem;
+    height: 2rem;
+}
