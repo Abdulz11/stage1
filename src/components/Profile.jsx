@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from "../image/photo-1628890923662-2cb23c2e0cfe.avif"
+import profile from "../image/profile__img.png"
 
 export default function () {
   return (
@@ -8,7 +8,7 @@ export default function () {
       <div className='img-div'>
         <img id="profile__img" src={profile} alt="profile photo" />
       </div>
-      <a  id="twitter" href="https://www.twitter.com/@abdul_oyewale">@abdul_oyewale</a>
+      <h3 className='title-name'>Annette Black</h3>
       {/* <a  id="slack" href="https//:www.slack.com/JustAbdul">Connect on slack</a> */}
     </div>
    </section>
