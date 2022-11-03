@@ -21,6 +21,9 @@ export default function () {
         <a id='book__design' href="https://books.zuri.team/design-rules" title=' Get the ultimate design rules  book from zuri for FREE'>
             Design Boooks
         </a>
+        <a id='contact' href="/contact" >
+            Contact
+        </a>
     </div>
   )
 }

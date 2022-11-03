@@ -1,16 +1,16 @@
-import Footer from "./components/Footer";
-import Links from "./components/Links";
-import Profile from "./components/Profile";
 import Contact from "./pages/Contact";
+import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className='app'>
-      <Profile />
-      <Links />
-      <Footer />
-      <Contact />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/contact' element={<Contact />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
