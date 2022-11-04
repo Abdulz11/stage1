@@ -183,7 +183,6 @@ footer{
     color: #475467;
 }
 .form-div{
-    border: solid red;
     display: flex;
    flex-direction: column;
 }
@@ -199,7 +198,6 @@ footer{
 
 
 .form-div input[type="text"],textarea{
-    border: solid fuchsia;
     width: 100%;
     color: #667085;
     padding: 10px 14px 10px 14px;
