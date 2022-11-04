@@ -167,10 +167,6 @@ footer{
     border: solid red;
     padding: 64px 0 96px 0;
     width: 60%;
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 }
 .form-header-details {
     margin-bottom: 54px;
@@ -188,12 +184,23 @@ footer{
 }
 .form-div{
     border: solid red;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+   flex-direction: column;
 }
-.form-div input[type="text"],textarea{
-   
+.form-names{
+    display: flex;
+    gap: 24px;
+    
+}
+.form-names div{
     width: 90%;
+    flex-grow: 1;
+}
+
+
+.form-div input[type="text"],textarea{
+    border: solid fuchsia;
+    width: 100%;
     color: #667085;
     padding: 10px 14px 10px 14px;
     border-radius: 8px;
@@ -208,7 +215,6 @@ footer{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    border: solid red;
 }
 textarea{
     height: 132px;
@@ -261,20 +267,24 @@ label{
  .form-div .checkbox-div{
     grid-column: 1/span 2;
     height: 24px;
+    /* padding: 15px 0px; */
     font-family: 'Inter';
     color: #475467;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    margin-top: 24px;
-    margin-bottom: 32px;
+    margin-top: 15px;
+    margin-bottom: 22px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     height: 50px;
-    border: solid red;
 }
 .form-div .checkbox-div label{
     margin-left: 12px;
+    /* margin-top: 12px; */
+    /* justify-self: center; */
+    display: flex;
+    /* align-self: center; */
 }
 
 .form-div .checkbox-div input{

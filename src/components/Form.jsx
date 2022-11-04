@@ -27,27 +27,29 @@ export default function Form() {
    
   return (
     <form className="form-div">
-        <div className=" form form-firstname">
-            <label>firstName</label>
-            <input 
-            type="text" 
-            id='first_name'
-            name='firstName'
-            placeholder='firstname'
-            onChange={handleChange}
-            value={formDetails.firstName}
-            />
-        </div>
-        <div className=" form form-lastname">
-            <label>Lastame</label>
-            <input 
-            type="text" 
-            id='last_name'
-            name='lastName'
-            placeholder='lastname'
-            onChange={handleChange}
-            value={formDetails.lastName}
-            />
+        <div className="form-names">
+            <div className=" form form-firstname">
+                <label>firstName</label>
+                <input 
+                type="text" 
+                id='first_name'
+                name='firstName'
+                placeholder='firstname'
+                onChange={handleChange}
+                value={formDetails.firstName}
+                />
+            </div>
+            <div className=" form form-lastname">
+                <label>Lastame</label>
+                <input 
+                type="text" 
+                id='last_name'
+                name='lastName'
+                placeholder='lastname'
+                onChange={handleChange}
+                value={formDetails.lastName}
+                />
+            </div>
         </div>
         <div className=" form form-email">
             <label>email</label>    
