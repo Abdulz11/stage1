@@ -4,7 +4,6 @@ import hnglogo from '../image/vector (3).png'
 import hnglogo2 from '../image/vector.png'
 import hnglogo3 from '../image/vector (2).png'
 import hnglogo4 from '../image/Vector (1).png'
-import FooterLogos from './FooterLogos'
 
 
 export default function() {
@@ -23,7 +22,6 @@ export default function() {
             </a>
         </div>
     </section>
-    <FooterLogos/>
     </>
   )
 }

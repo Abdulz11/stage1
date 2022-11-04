@@ -26,64 +26,66 @@ export default function Form() {
     console.log(formDetails)
    
   return (
-    <form className="form-div">
-        <div className="form-names">
-            <div className=" form form-firstname">
-                <label>firstName</label>
+    <>
+        <form className="form-div">
+            <div className="form-names">
+                <div className=" form form-firstname">
+                    <label>First name</label>
+                    <input 
+                    type="text" 
+                    id='first_name'
+                    name='firstName'
+                    placeholder='Enter your first name'
+                    onChange={handleChange}
+                    value={formDetails.firstName}
+                    />
+                </div>
+                <div className=" form form-lastname">
+                    <label>Last name</label>
+                    <input 
+                    type="text" 
+                    id='last_name'
+                    name='lastName'
+                    placeholder='Enter your last name'
+                    onChange={handleChange}
+                    value={formDetails.lastName}
+                    />
+                </div>
+            </div>
+            <div className=" form form-email">
+                <label>Email</label>    
                 <input 
                 type="text" 
-                id='first_name'
-                name='firstName'
-                placeholder='firstname'
+                id='email'
+                name='email'
+                placeholder='yourname@email.com'
                 onChange={handleChange}
-                value={formDetails.firstName}
+                value={formDetails.email}
                 />
             </div>
-            <div className=" form form-lastname">
-                <label>Lastame</label>
-                <input 
+            <div className=" form form-textarea">
+            <label>Message</label>
+            <textarea
                 type="text" 
-                id='last_name'
-                name='lastName'
-                placeholder='lastname'
+                id='message'
+                name='textArea'
+                placeholder="Send me a message and I'll reply you as soon as possible..."
                 onChange={handleChange}
-                value={formDetails.lastName}
-                />
+                value={formDetails.textArea}
+            />
             </div>
-        </div>
-        <div className=" form form-email">
-            <label>email</label>    
-            <input 
-            type="text" 
-            id='email'
-            name='email'
-            placeholder='email'
-            onChange={handleChange}
-            value={formDetails.email}
-            />
-        </div>
-        <div className=" form form-textarea">
-           <label>Message</label>
-           <textarea
-            type="text" 
-            id='message'
-            name='textArea'
-            placeholder="Send me a message and I'll reply you as soon as possible..."
-            onChange={handleChange}
-            value={formDetails.textArea}
-           />
-        </div>
-        <div className="checkbox-div">
-            <input 
-            type="checkbox" 
-            id='checkbox'
-            name="provideData"
-            checked={formDetails.provideData}
-            onChange={handleChange}
-            />
-            <label htmlFor="provideData">You agree to providing your data to Abdul who may contact you.</label>
-        </div>
-        <button id='btn_submit' onSubmit={handleSubmit}>Submit</button>
-    </form>
+            <div className="checkbox-div">
+                <input 
+                type="checkbox" 
+                id='checkbox'
+                name="provideData"
+                checked={formDetails.provideData}
+                onChange={handleChange}
+                />
+                <label htmlFor="provideData">You agree to providing your data to Abdul who may contact you.</label>
+            </div>
+            <button id='btn_submit' onSubmit={handleSubmit}>Submit</button>
+        </form>
+    </>
   )
 }

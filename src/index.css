@@ -156,7 +156,6 @@ footer{
 
 /* contact page */
 .form-main-container{
-    border: solid pink;
     display: flex;
     padding: 64px 0 96px 0;
     justify-content: center;
@@ -164,7 +163,6 @@ footer{
     /* height: 100vh; */
 }
 .form-container{
-    border: solid red;
     padding: 64px 0 96px 0;
     width: 60%;
 }
@@ -173,7 +171,15 @@ footer{
 }
 .form-header-details h2{
     margin-bottom: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    color: #101828;
 }
+
 .form-header-details p{
     font-family: 'Inter';
     font-style: normal;
@@ -218,12 +224,13 @@ textarea{
     height: 132px;
     padding: 12px 14px;
     border: 1px solid #D0D5DD;
+    resize: none;
 }
 .form-textarea{
     display: flex;
 }
 label{
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -290,4 +297,33 @@ label{
     border-radius: 6px;
     width: 20px;
     height: 20px;
+}
+
+/* media queries for contact page */
+@media all and (max-width:600px ){
+    .link-container{
+        width: 90%;
+    }
+    .form-names{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-container{
+        padding: 64px 0 96px 0;
+        width: 90%;
+    }
+    .form-names div{
+        width: 100%;
+    }
+    .footer-container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 48px 0px;
+        gap: 24px;
+       align-items: flex-start;
+       justify-content: center;
+       height: 200px;
+       width: 90%;
+    }
 }
