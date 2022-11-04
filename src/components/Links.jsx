@@ -22,7 +22,7 @@ export default function () {
             Design Boooks
         </a>
         <a id='contact' href="/contact" >
-            Contact
+            Contact Me
         </a>
     </div>
   )

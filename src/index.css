@@ -153,3 +153,133 @@ footer{
     gap: 64px;
     height: 160px;
 }
+
+/* contact page */
+.form-main-container{
+    border: solid pink;
+    display: flex;
+    padding: 64px 0 96px 0;
+    justify-content: center;
+  
+    /* height: 100vh; */
+}
+.form-container{
+    border: solid red;
+    padding: 64px 0 96px 0;
+    width: 60%;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+.form-header-details {
+    margin-bottom: 54px;
+}
+.form-header-details h2{
+    margin-bottom: 20px;
+}
+.form-header-details p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #475467;
+}
+.form-div{
+    border: solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form-div input[type="text"],textarea{
+   
+    width: 90%;
+    color: #667085;
+    padding: 10px 14px 10px 14px;
+    border-radius: 8px;
+    height: 44px;
+    margin-bottom: 24px;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    background: #FFFFFF;
+    gap: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border: solid red;
+}
+textarea{
+    height: 132px;
+    padding: 12px 14px;
+    border: 1px solid #D0D5DD;
+}
+.form-textarea{
+    display: flex;
+}
+label{
+    margin-bottom: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.form-div  .form{
+    display: flex;
+    flex-direction: column;
+}
+.form-email{
+    grid-column: 1/span 2
+}
+.form-textarea{
+    grid-column: 1/span 2;
+    /* padding: 12px 14px 12px 14px ; */
+}
+
+.form-textarea input{
+    height: 132px;
+    /* padding: 0 14px; */
+    line-height: 24px;
+} 
+#btn_submit{
+    grid-column: 1/span 2;
+    height: 48px;
+    padding: 12px 20px;
+    background: #1570EF;
+    border: 1px solid #1570EF;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF
+}
+ .form-div .checkbox-div{
+    grid-column: 1/span 2;
+    height: 24px;
+    font-family: 'Inter';
+    color: #475467;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border: solid red;
+}
+.form-div .checkbox-div label{
+    margin-left: 12px;
+}
+
+.form-div .checkbox-div input{
+    border: 1px solid #D0D5DD;
+    border-radius: 6px;
+    width: 20px;
+    height: 20px;
+}
