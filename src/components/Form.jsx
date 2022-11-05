@@ -5,6 +5,8 @@ export default function Form() {
     const [formDetails,setFormDetails] = useState({firstName:'',
     lastName:'',email:'',textArea:'',provideData:true})
     const [showMessage,setShowMessage] = useState(false) 
+    const [borderColor,setBorderColor] = useState("#D0D5DD") 
+    
 
     function handleChange(event) {
         if(event.target.type === 'checkbox'){
@@ -22,12 +24,19 @@ export default function Form() {
     }
     function handleSubmit(e){
         e.preventDefault()
+        if(formDetails.textArea == ''){
+           setBorderColor('red')
+        }
+        else{
+            setBorderColor('#D0D5DD')
         setFormDetails({firstName:'',
         lastName:'',email:'',textArea:'',provideData:true})
         setShowMessage(true)
         setTimeout(()=>{
             setShowMessage(false)
         },1000)   
+        }
+        
     }
 
   return (
@@ -74,7 +83,7 @@ export default function Form() {
             <div className=" form form-textarea">
             <label>Message</label>
             <textarea
-                required
+                style={{border:` 1px solid ${borderColor}`}}
                 type="text" 
                 id='message'
                 name='textArea'
