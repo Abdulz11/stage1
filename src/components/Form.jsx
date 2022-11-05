@@ -13,21 +13,20 @@ export default function Form() {
             )
         }
         else{
-        setFormDetails(prevDetails =>({
-            ...prevDetails,[event.target.name]:event.target.value
-        })
-        )
+            setFormDetails(prevDetails =>({
+                ...prevDetails,[event.target.name]:event.target.value
+            })
+            )
+        }
     }
+    function handleSubmit(e){
+        e.preventDefault()
+        console.log(formDetails)   
     }
-    function handleSubmit() {
-        console.log(formDetails)
-        
-    }
-    console.log(formDetails)
-   
+
   return (
     <>
-        <form className="form-div">
+        <form className="form-div" onSubmit={handleSubmit}>
             <div className="form-names">
                 <div className=" form form-firstname">
                     <label>First name</label>
@@ -55,7 +54,7 @@ export default function Form() {
             <div className=" form form-email">
                 <label>Email</label>    
                 <input 
-                type="text" 
+                type="email" 
                 id='email'
                 name='email'
                 placeholder='yourname@email.com'
@@ -84,7 +83,7 @@ export default function Form() {
                 />
                 <label htmlFor="provideData">You agree to providing your data to Abdul who may contact you.</label>
             </div>
-            <button id='btn_submit' onSubmit={handleSubmit}>Submit</button>
+            <button id='btn__submit' >Submit</button>
         </form>
     </>
   )

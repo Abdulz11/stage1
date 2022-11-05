@@ -5,21 +5,23 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
 }
 img{
     width: 100%;
-    border-radius: 275px
 }
+
+/* profile pic */
 .img-div img{
     width: 88px;
     height: 88px;
-    
 }
 
+
+/* app body */
 .app{
     max-width: 100vw;
 }
+
 /* profile section */
 .profile-container{
     display: flex;
@@ -50,14 +52,6 @@ color: #101828;
     justify-content: center;
     align-items: center;
 }
-.profile-container a{
-    font-size: 1.7rem;
-    color: white;
-    text-decoration:none;
-}
-.profile-container a:hover{
-    text-decoration: underline;
-}
 
 /* link section */
 .link-container{
@@ -65,50 +59,33 @@ color: #101828;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding:  32px; */
     gap: 8px;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
-
+    width: 77%;
 }
 
 .link-container a{
-    border: 1px solid #EAECF0;
-    border-radius: 8px;
+    /* font */
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 500;
     font-size: 18px;
+    font-weight: 500;
     line-height: 28px;
     text-decoration: none;
+    border-radius: 8px;
+    /* color */
+    border: 1px solid #EAECF0;
     color: #101828;
+    background-color:#EAECF0;
     height: 76px;
+    /* flex */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#EAECF0;
     width: 100%;
     margin: 1rem;
-    text-align: center;
 }
-
-.link-container a p:first-child{
-    font-weight: 700;
-    font-size: 1.25rem;
-}
-.link-container a p{ 
-    text-align: center;
-    font-size: 1.11rem;
-    margin: 0.6rem;
-    
-}
-
-.btn:hover{
-    transform: scale(1.021);
-    cursor: pointer;
-}
-
 
 /* social  */
 .social{
@@ -117,9 +94,10 @@ color: #101828;
     justify-content: center;
     padding: 48px 0px;
     gap: 64px;
-    height: 72px
-    
+    height: 72px 
 }
+
+/* slack logo */
 .grid-logo{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -136,22 +114,22 @@ color: #101828;
     transform: rotate(360deg);
 }
 
+
 /* footer */
 footer{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .footer-container{
-    border-top: 1px solid #EAECF0;
+    width: 77%;
     display: flex;
-    width: 75%;
     align-items: center;
     justify-content: space-around;
     padding: 48px 0px;
     gap: 64px;
     height: 160px;
+    border-top: 1px solid #EAECF0;
 }
 
 /* contact page */
@@ -159,9 +137,8 @@ footer{
     display: flex;
     padding: 64px 0 96px 0;
     justify-content: center;
-  
-    /* height: 100vh; */
 }
+
 .form-container{
     padding: 64px 0 96px 0;
     width: 60%;
@@ -188,6 +165,8 @@ footer{
     line-height: 30px;
     color: #475467;
 }
+
+/* form body */
 .form-div{
     display: flex;
    flex-direction: column;
@@ -202,18 +181,20 @@ footer{
     flex-grow: 1;
 }
 
+/* input fields */
 
-.form-div input[type="text"],textarea{
+.form-div input[type="text"],.form-div input[type="email"],textarea{
     width: 100%;
-    color: #667085;
     padding: 10px 14px 10px 14px;
     border-radius: 8px;
     height: 44px;
     margin-bottom: 24px;
     border: 1px solid #D0D5DD;
+    color: #667085;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     background: #FFFFFF;
     gap: 8px;
+    /* font */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -222,13 +203,12 @@ footer{
 }
 textarea{
     height: 132px;
+    line-height: 24px;
     padding: 12px 14px;
     border: 1px solid #D0D5DD;
     resize: none;
 }
-.form-textarea{
-    display: flex;
-}
+
 label{
     margin-bottom: 8px;
     font-family: 'Inter';
@@ -241,27 +221,15 @@ label{
     display: flex;
     flex-direction: column;
 }
-.form-email{
-    grid-column: 1/span 2
-}
-.form-textarea{
-    grid-column: 1/span 2;
-    /* padding: 12px 14px 12px 14px ; */
-}
-
-.form-textarea input{
-    height: 132px;
-    /* padding: 0 14px; */
-    line-height: 24px;
-} 
+/* submit button */
 #btn_submit{
-    grid-column: 1/span 2;
     height: 48px;
     padding: 12px 20px;
     background: #1570EF;
     border: 1px solid #1570EF;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
+    /* font */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -269,10 +237,9 @@ label{
     line-height: 24px;
     color: #FFFFFF
 }
+/* checkbox */
  .form-div .checkbox-div{
-    grid-column: 1/span 2;
     height: 24px;
-    /* padding: 15px 0px; */
     font-family: 'Inter';
     color: #475467;
     font-style: normal;
@@ -284,12 +251,10 @@ label{
     align-items: flex-start;
     height: 50px;
 }
+
 .form-div .checkbox-div label{
     margin-left: 12px;
-    /* margin-top: 12px; */
-    /* justify-self: center; */
     display: flex;
-    /* align-self: center; */
 }
 
 .form-div .checkbox-div input{
@@ -299,11 +264,13 @@ label{
     height: 20px;
 }
 
-/* media queries for contact page */
+/* media queries  */
 @media all and (max-width:600px ){
+    /* link */
     .link-container{
         width: 90%;
     }
+    /* contact page */
     .form-names{
         display: flex;
         flex-direction: column;
@@ -315,6 +282,7 @@ label{
     .form-names div{
         width: 100%;
     }
+    /* footer */
     .footer-container{
         margin-top: 20px;
         display: flex;

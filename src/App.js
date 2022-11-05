@@ -1,7 +1,7 @@
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FooterLogos from "./components/FooterLogos";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (

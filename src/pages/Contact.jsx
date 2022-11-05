@@ -11,8 +11,6 @@ export default function Contact() {
                 </div>
                 <Form/>
             </div>
-        </div>
-       
+        </div>  
     )
-  
 }
