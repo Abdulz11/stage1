@@ -1,9 +1,10 @@
-import { useState } from "react"
+import { useState,useEffect } from "react"
 
 
 export default function Form() {
     const [formDetails,setFormDetails] = useState({firstName:'',
     lastName:'',email:'',textArea:'',provideData:true})
+    const [showMessage,setShowMessage] = useState(false) 
 
     function handleChange(event) {
         if(event.target.type === 'checkbox'){
@@ -21,7 +22,12 @@ export default function Form() {
     }
     function handleSubmit(e){
         e.preventDefault()
-        console.log(formDetails)   
+        setFormDetails({firstName:'',
+        lastName:'',email:'',textArea:'',provideData:true})
+        setShowMessage(true)
+        setTimeout(()=>{
+            setShowMessage(false)
+        },1000)   
     }
 
   return (
@@ -31,6 +37,7 @@ export default function Form() {
                 <div className=" form form-firstname">
                     <label>First name</label>
                     <input 
+                    required
                     type="text" 
                     id='first_name'
                     name='firstName'
@@ -42,6 +49,7 @@ export default function Form() {
                 <div className=" form form-lastname">
                     <label>Last name</label>
                     <input 
+                    required
                     type="text" 
                     id='last_name'
                     name='lastName'
@@ -54,6 +62,7 @@ export default function Form() {
             <div className=" form form-email">
                 <label>Email</label>    
                 <input 
+                required
                 type="email" 
                 id='email'
                 name='email'
@@ -65,6 +74,7 @@ export default function Form() {
             <div className=" form form-textarea">
             <label>Message</label>
             <textarea
+                required
                 type="text" 
                 id='message'
                 name='textArea'
@@ -84,6 +94,10 @@ export default function Form() {
                 <label htmlFor="provideData">You agree to providing your data to Abdul who may contact you.</label>
             </div>
             <button id='btn__submit' >Submit</button>
+            {showMessage && <div className="confirmation-message">
+                <h2>Form submitted</h2>
+            </div>}
+            
         </form>
     </>
   )
